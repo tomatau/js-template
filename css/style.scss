@@ -1,0 +1,294 @@
+@import "settings";
+@import "_tomatao-reset";
+
+
+/* ===== My Styles ==========================================================
+   Author: Tomato
+   ========================================================================== */
+
+/**
+ * 	Base
+ */
+
+	/* 
+	 * Remove text-shadow in selection highlight
+	 * These selection declarations have to be separate
+	 */
+	
+	::-moz-selection { background: $orange; color: #fff; text-shadow: none; }
+	::selection { background: $orange; color: #fff; text-shadow: none; }
+
+    img {
+        vertical-align: middle;
+    }
+
+    html {
+        color: $black;
+    }
+
+    button,
+    input,
+    select,
+    textarea {
+        color: #222;
+        padding: $black;
+    }
+    
+    /**
+     *  taken from twitter bootstrap
+     */
+    input, textarea {
+        border: 1px solid #CCCCCC;
+        -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+        -webkit-transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+        -moz-transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+        -o-transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+        -ms-transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+        transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+        border-radius: 5px;
+    }
+    
+    input:focus,
+    textarea:focus {
+        border-color: rgba(82, 168, 236, 0.8) !important;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(82, 168, 236, 0.6);
+        outline: 0 none;
+    }
+    
+    select:focus, 
+    input[type="file"]:focus, 
+    input[type="radio"]:focus, 
+    input[type="checkbox"]:focus {
+        outline: thin dotted #333333;
+        outline-offset: -2px;
+    }
+
+	textarea {
+	    resize: vertical;
+	}
+
+	body {
+	    font-size: 1em;
+	    line-height: 1.4;
+	}
+
+	/**
+	 * 	Link Colour
+	 */
+	a {
+		color: $blue; 
+		text-decoration: none;
+	}
+    
+    /**
+     *  notifications
+     */
+    .error, .message {
+        font-size: 9pt;
+    }
+    .message {
+        color: $green;
+    }
+    .error {
+        color: $dark-red;
+    }
+
+/* ==========================================================================
+   Main Styles
+   ========================================================================== */
+
+
+body {
+}
+
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+
+
+
+
+/*
+
+	hovers
+
+*/
+/*
+
+	focuses
+
+*/
+/*
+
+	actives
+
+*/
+/*
+
+    visitd
+    
+*/
+
+
+/* ==========================================================================
+   Animations
+   ========================================================================== */
+
+
+
+/*
+	End of Design Styles
+*/
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+
+/*
+	BROWSER FIXES
+*/
+
+html.ie7 {
+	width: auto;
+}
+
+ /* inline blocks */
+/*
+.ie7 {
+	zoom: 1;
+	*display:inline;
+}
+*/

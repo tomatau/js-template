@@ -1,0 +1,40 @@
+// COLOURS
+$black: #222222;
+$gray: #CCCCCC;
+$white: #FCFFF7;
+$blue: #0088CC; // links
+$orange: #FF6526; // selection
+$dark-red: #960D0D; // errors
+$green: #9EB63A; // errors
+
+// min width 240px?
+$mobile_small_width: 300px;
+$mobile_width: 320px;
+$mobile_large_width: 384px;
+$mobile_landscape: 480px;
+
+// Design mainly for iphone as it will be high quality
+// some phones are only 300px though so allow style for downsizing 
+@mixin mobile_portrait_small {
+	@media screen and (max-width: $mobile_small_width) {
+		@content;	
+	}
+}
+
+@mixin mobile_portrait {
+	@media screen and (min-width: $mobile_small_width + 1) and (max-width: $mobile_width) {
+		@content;	
+	}
+}
+
+@mixin mobile_portrait_large {
+	@media screen and (min-width: $mobile_width + 1) and (max-width: $mobile_large_width) {
+		@content;	
+	}
+}
+
+@mixin mobile_landscape {
+	@media screen and (min-width: $mobile_landscape) {
+		@content;	
+	}
+}
