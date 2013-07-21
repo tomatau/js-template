@@ -57,9 +57,9 @@ requirejs.config({
           'vendor/jquery/jquery.2.0.3.min'
         ],
         functions: 'hlpr/functions',
-        underscore: 'vendor/underscore/underscore.1.4.4',
+        underscore: 'vendor/underscore/underscore.1.5.1',
         backbone: 'vendor/backbone/backbone.1.0.0',
-        marionette: 'vendor/marionette/backbone.marionette.1.0.3',
+        marionette: 'vendor/marionette/backbone.marionette.1.0.4',
         bbvalid: 'vendor/backbone/extra/backbone-validation',
         angular : 'vendor/angular/angular.1.1.5.min'
       }
