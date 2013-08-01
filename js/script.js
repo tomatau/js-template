@@ -23,6 +23,7 @@ requirejs.config({
         },
         backbone: {
           deps: [
+            'vendor/json2',
             'jquery',
             'underscore',
             'hlpr/serializeObject'
@@ -52,6 +53,7 @@ requirejs.config({
         view: 'app/views',
         model: 'app/models',
         tmpl: '../tmpl',
+        style: '../css',
         jquery : [
           'http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min',
           'vendor/jquery/jquery.2.0.3.min'
