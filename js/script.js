@@ -21,6 +21,9 @@ requirejs.config({
         underscore: {
           exports: '_'
         },
+        bootstrap: {
+          deps: 'jquery'
+        },
         backbone: {
           deps: [
             'vendor/json2',
