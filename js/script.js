@@ -46,19 +46,24 @@ requirejs.config({
           deps : [
             'jquery'
           ]
+        },
+        jqueryui : {
+          deps: [
+            'jquery'
+          ]
         }
       },
 
       paths: {
-        view: 'app/views',
-        model: 'app/models',
         tmpl: '../tmpl',
-        style: '../css',
+        css: '../css',
         jquery : [
           'http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min',
           'vendor/jquery/jquery.2.0.3.min'
         ],
+        jqueryui: 'vendor/jquery/ui/jquery-ui.1.10.3',
         functions: 'hlpr/functions',
+        bootstrap: 'vendor/bootstrap/bootstrap.3.0.0',
         underscore: 'vendor/underscore/underscore.1.5.1',
         backbone: 'vendor/backbone/backbone.1.0.0',
         marionette: 'vendor/marionette/backbone.marionette.1.0.4',
