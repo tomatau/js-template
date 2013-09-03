@@ -1,5 +1,5 @@
 // paulirish.com/2009/log-a-lightweight-wrapper-for-consolelog/
-if ( ! window.hasOwnProperty('log') ) {
+if ( ! Object.prototype.hasOwnProperty(window, 'log') ) {
     window.log = function(){
       log.history = log.history || [];   // store logs to an array for reference
       log.history.push(arguments);

@@ -1,15 +1,4 @@
 /**
- * Load helper functions before require
-Modernizr.load([
-	{
-		load: [
-			'js/hlpr/functions.js'
-		]
-	}
-]);
- */
-
-/**
  * Setup Require
  * 
  */
@@ -59,12 +48,13 @@ requirejs.config({
 
       paths: {
         tmpl: '../tmpl',
-        css: '../css',
+        style: '../css',
         jquery : [
           'http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min',
           'vendor/jquery/jquery.2.0.3.min'
         ],
         jqueryui: 'vendor/jquery/ui/jquery-ui.1.10.3',
+        jqueryui_bs: 'vendor/jquery/ui/',
         functions: 'hlpr/functions',
         bootstrap: 'vendor/bootstrap/bootstrap.3.0.0',
         underscore: 'vendor/underscore/underscore.1.5.1',
@@ -77,9 +67,9 @@ requirejs.config({
 });
 
 requirejs([
-  'functions',
-  'marionette'
+  'app/inits',
 ],
-function Bootstrap( Marionette ) {
+function Bootstrap( MyApp ) {
   'use strict';
+  MyApp.start();
 });
