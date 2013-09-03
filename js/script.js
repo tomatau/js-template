@@ -69,7 +69,7 @@ requirejs.config({
         bootstrap: 'vendor/bootstrap/bootstrap.3.0.0',
         underscore: 'vendor/underscore/underscore.1.5.1',
         backbone: 'vendor/backbone/backbone.1.0.0',
-        marionette: 'vendor/marionette/backbone.marionette.1.0.4',
+        marionette: 'vendor/marionette/backbone.marionette.1.1.0',
         bbvalid: 'vendor/backbone/extra/backbone-validation',
         angular : 'vendor/angular/angular.1.1.5.min'
       }
